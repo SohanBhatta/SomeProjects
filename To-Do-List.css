@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todobox{
+    width: 100%;
+    max-width: 500px;
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black, -5px -5px 5px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.todobox h2{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.inputField{
+    height: 60px;
+    width: 100%;
+    margin-top: 6px;
+    display: flex;
+}
+.inputField input{
+    height: 100%;
+    width: 80%;
+    outline: none;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.inputField button{
+    height: 100%;
+    width: 80px;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    background-color: rgb(220, 92, 92);
+    font-size: 1.2rem;
+}
+h3{
+    margin-top: 50px;
+    margin-left: 70px;
+}
+
+.todobox .task{
+    /* height: 125px; */
+    width : 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 10px;
+}
+.task p{
+    margin-left: 10px;
+    margin-top: 10px
+}
+.task span{
+    margin-top: 12px;
+    margin-left: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.task .checkBoxInput{
+    margin-top: -15px;
+    margin-left: -480px;
+    
+}
+.checked{
+    text-decoration: line-through;
+}
+.removeBtn{
+    height: 30px;
+    width: 60px;
+    margin-top: -23px;
+    margin-left: 420px;
+}
+
+
+@media only screen and (max-width: 600px){
+    .todobox{
+        width: 100%;
+        max-width: 300px;
+    }
+    .inputField input{
+        width: 60%;
+    }
+    .inputField button{
+        width: 40%;
+    }
+    .task .checkBoxInput{
+        margin-left: -280px;
+    }
+    .removeBtn{
+        margin-left: 220px;
+    }
+
+    
+}
