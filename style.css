@@ -1,0 +1,310 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+   background-image: url('pexels-jplenio-1103970.jpg');
+    
+   /* background-image: url('stefan-cosma-GVlcXhQejA8-unsplash.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+header{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    justify-content: center;
+    align-items: center;
+}
+.nav{
+    height: 80px;
+    width: 93%;
+    /* background-color: aqua; */
+    display: flex;
+    margin-left: 100px;
+    margin-top: -100px;
+    gap: 20px;
+    align-items: center;
+    
+    
+}
+.logo{
+    background: transparent;
+    height: 100px;
+    width: 80px;
+    mix-blend-mode: multiply;
+}
+li{
+   margin-left: 70%;
+   font-size: 20px;
+   font-weight: 600;
+   color: black;
+   list-style: none;
+   cursor: pointer;
+   margin-top: 40px;
+}
+a{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(182, 73, 73);
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    background-color: rgb(182, 73, 73);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+#btn:hover {
+    /* transition-delay: 0.2s; */
+    transform: scale(1.5) translateZ(20px);
+    transition-duration: 1s;
+}
+#btn:focus{
+    background-color: aqua;
+    color: black;
+    transform: scale(1.5);
+}
+
+
+
+
+/* This is for input box field */
+
+.h3{
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    width: 100px;
+    margin-left: 35%;
+}
+
+
+
+.loginbox {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin-top: 150px;
+    margin-left: 35%;
+    box-shadow: 20px 20px 20px 10px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.3s ease;
+    /* justify-content: center; */
+}
+.email{
+    height: 100%;
+    width: 100%;
+    
+}
+/* This ids the div contain emai;l; and password */
+.userName{
+    position: relative;
+    height: 50px;
+width: 90%;
+margin-left: 20px;
+margin-bottom: 50px;
+margin-top: 50px;
+/* border-radius: 10px; */
+border-bottom: 4px solid orange;
+padding-left: 10px;
+background-color: transparent;
+
+}
+
+.inputbox{
+    position: absolute;
+    height: 40px;
+    width: 70%;
+    margin-left: -5px;
+    font-size: 15px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding-top: 5px;
+    color: rgba(207, 18, 18, 0.9);
+
+
+}
+ 
+.box1{
+    display: none;
+}
+
+
+ .label{
+  margin-top: 13px;  
+  position: absolute;
+    /* transform: translateY(-50px); */
+ }
+
+ .password{
+    position: relative;
+    height: 50px;
+width: 90%;
+margin-left: 20px;
+margin-bottom: 100px;
+margin-top: 50px;
+/* border-radius: 10px; */
+border-bottom: 4px solid orange;
+padding-left: 10px;
+background-color: transparent;
+}
+
+.inputbox:focus + .label,
+.inputbox:valid + .label,
+.inputbox:hover + .label{
+    /* left: -1px; */
+    /* top: -15px; */
+    transform: translateY(-15px);
+    color: rgb(108, 53, 108);
+    transition: 0.2s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.label:hover{
+    transform: translateY(-15px);
+    color: rgb(108, 53, 108);
+    transition: 0.2s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+
+
+.remember{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 10px;
+}
+
+/* remember .tickinput:focus,
+.remember .tickinput:valid{
+    color: rgb(92, 160, 92);
+}
+. */
+.registration{
+    display:flex;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 80px;
+    color: blanchedalmond;
+    /* border-bottom: 3px solid purple; */
+}
+#reg{
+    color: blanchedalmond;
+    font-size: 20px;
+    color:aquamarine;
+    margin-left:10px;
+    cursor: pointer;
+}
+.forget{
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 250px;
+    color: blanchedalmond;
+    border-bottom: 3px solid purple;
+}
+.submit{
+    position: absolute;
+    height: 30px;
+    width: 200px;
+    margin-top: -33px;
+    margin-left: 80px;
+    background-color: azure;
+    color: red;
+}
+
+
+/* for registration */
+
+.rh3{
+    margin-top: 50%;
+    width: 200px;
+    margin-left: 90px;
+}
+#rforgot{
+    margin-bottom: -200px;
+    height: 30px;
+    width: 200px;
+   cursor: default;
+}
+
+.RuserName{
+    position: relative;
+    height: 50px;
+width: 90%;
+margin-left: 20px;
+margin-bottom: 50px;
+margin-top: 50px;
+/* border-radius: 10px; */
+border-bottom: 4px solid orange;
+padding-left: 10px;
+background-color: transparent;
+}
+
+.rremember{
+    margin-left: 50px;
+}
+    
+#backspace{
+    height: 20px;
+    width: 20px;
+    font-size: 1.2rem;
+    margin-left: 380px;
+    margin-top: 6px;
+}
+
+#backspace:hover{
+    color: red;
+
+    transition: 0.2s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+#backspace:focus{
+    color: red;
+    transition: 0.2s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.headingParaDiv{
+
+    position: absolute;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    color: orange;
+    width: 400px;
+    margin-left: 35%;
+    margin-top: 100px;
+    transition: 0.5s ease-in-out;
+    border-bottom: 7px solid black;
+    border-radius: 10px;
+    transition-delay: 0.2s;
+}

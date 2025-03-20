@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login interface</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images\2496508.jpg" class="logo">
+        <div class="container">
+        <div class="nav">
+                <li><a href="#" class="an">Home</a></li>
+                <a href="#" class="an">About</a>
+                <a href="#" class="an">Contact</a>
+                <button id="btn">Login</button>
+        </div>
+        </div>
+    </header>
+<main>
+    <section><div class="headingParaDiv"><p id="headingPara">Welcome to our source.</p><p> Please login or register your account for further actions!</p></section></div>
+    <div class="loginbox">
+        <!-- <img src="backspace-arrow.png" id="backspace"> -->
+        <i class="fa-solid fa-xmark" id="backspace"></i>
+       <div class="email">
+         <div class="h3"><h3>Login </h3></div>
+         <div class="userName">
+            <form>
+                
+            <input type="text" class="inputbox" id="i1" value="" required>
+            <label class="label">E-mail / UserName</label>
+         </form>
+         </div>
+
+
+
+         <div class="password">
+            <form>
+                
+                <input type="password" class="inputbox" id="i2" required>
+                <label class="label">Password</label>
+            </form>
+            
+         </div>
+
+
+
+
+         <div class="remember">
+            <input type="checkbox" id="tick" name="remember"  class="tickinput">
+            <label for="tick">Remember Me</label>
+           
+    
+           </div>
+           <div class="registration">
+            <p>Already register?</p><u><p id="reg" class="re">Register</p></u>
+           </div>
+           <div class="forget"><p>forgot password</p></div>
+           <button class="submit"><a href="projectHtml.html">Login</a>
+           
+
+           </button>
+
+
+<!-- new registration box is in process -->
+
+
+
+           <div class="h3 rh3"><h3>Registration </h3></div>
+       <div class="email remail">
+        <div class="userName ruserName">
+            <form>
+                
+            <input type="text" class="inputbox rinputbox" required>
+            <label class="label rlabel">E-mail</label>
+        </form>
+        </div>
+
+        <div class="RuserName">
+            <form>
+                
+                <input type="text" class="inputbox" required>
+                <label class="label">UserName</label>
+            </form>
+            
+        </div>
+
+        <div class="password rpassword">
+            <form>
+                
+                <input type="password" class="inputbox rinputbox" required>
+                <label class="label rlabel">Password</label>
+            </form>
+            
+        </div>
+        <div class="remember rremember" >
+            <input type="checkbox" id="rtick" name="rremember" class="tickinput rtickinput">
+            <label id="terms" for="rtick">I agree to all terms and condition</label>
+           
+    
+           </div>
+           <div class="registration rlogin">
+            <p>Do you have account?</p><u><p id="reg" class="rreg">login</p></u>
+           </div>
+           <!-- <div class="forget rforgot"><p>forgot password</p></div> -->
+           <button class="submit rforgot">
+           Register
+
+           </button>
+           </div>
+           </div>
+    </div>
+    
+</main>
+
+    <script src="script.js"></script>
+</body>
+</html>
